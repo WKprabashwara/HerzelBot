@@ -62,7 +62,7 @@ async def start_bot():
             )
 
         else:
-            await app.send_message(LOG_GROUP_ID, "Bot started!")
+            await app.send_message(-1001749160500, "Bot started!")
     except Exception:
         pass
     print(f"{all_module}")
@@ -70,8 +70,8 @@ async def start_bot():
  _____________________________________________   
 |                                             |  
 |          Deployed Successfully              |  
-|         (C) 2021-2022 by @szteambots        | 
-|          Greetings from supun  :)           |
+|       (C) 2021-2022 by @ImPrabashwara       | 
+|        Greetings from Prabashwara  :)       |
 |_____________________________________________|""")
     await idle()
 
@@ -86,31 +86,31 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text=" ➕ Add Me To Your Group ➕ ",
+                text="➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ➕",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
            InlineKeyboardButton(
-                text=" ℹ️ About", callback_data="_about"
+                text="ℹ️ 𝐀𝐛𝐨𝐮𝐭", callback_data="_about"
             ),
             InlineKeyboardButton(
-                text="🌍 languages ", callback_data="_langs"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⚒ Help ", callback_data="bot_commands"
+                text="🌏 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞𝐬", callback_data="_langs"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🌐 Website",
-                url=f"https://herzelbot.ml",
+                text="⚙️ 𝐇𝐞𝐥𝐩", callback_data="bot_commands"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🌐 𝐖𝐞𝐛𝐬𝐢𝐭𝐞",
+                url=f"",
             ),
             InlineKeyboardButton(
-                text="🔰 News Channel",
-                url=f"https://t.me/szherzelupdates",
+                text="⚜️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥",
+                url=f"https://t.me/HerzelUpdates",
             )
         ],
     ]
@@ -120,7 +120,7 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="📚 Commands & help",
+                text="📚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 & 𝐇𝐞𝐥𝐩",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             )
         ]
@@ -164,8 +164,10 @@ async def start(client, message: Message, _):
             await message.reply("Run /connections to view or disconnect from groups!")
     else:
         await message.reply(f"""
-Hey there {message.from_user.mention}, 
-My name is {BOT_NAME} an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs.feel free to add me to your groups!
+*𝐇𝐞𝐲* {message.from_user.mention} * 𝐈'𝐦 𝐇𝐞𝐫𝐳𝐞𝐥 🥀. 
+𝐈 𝐜𝐚𝐧 𝐡𝐞𝐥𝐩 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬, 𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ! 📻 𝐈'𝐦 𝐦𝐚𝐝𝐞 𝐛𝐲 @TeamHerzel 💸* 
+
+*𝐇𝐢𝐭* /help *𝐭𝐨 𝐟𝐢𝐧𝐝 𝐦𝐲 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔑*
 """,reply_markup=home_keyboard_pm)
         return await add_served_user(chat_id) 
 
@@ -248,8 +250,10 @@ async def startcq(client,CallbackQuery, _):
         served_users.append(int(user["bot_users"]))
     await CallbackQuery.message.edit(
             text=f"""
-Hey there {CallbackQuery.from_user.mention}, 
-My name is Herzel an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs.feel free to add me to your groups!
+*𝐇𝐞𝐲* {CallbackQuery.from_user.mention} 𝐈'𝐦 𝐇𝐞𝐫𝐳𝐞𝐥 🥀. 
+𝐈 𝐜𝐚𝐧 𝐡𝐞𝐥𝐩 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬, 𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ! 📻 𝐈'𝐦 𝐦𝐚𝐝𝐞 𝐛𝐲 @TeamHerzel 💸* 
+
+*𝐇𝐢𝐭* /help *𝐭𝐨 𝐟𝐢𝐧𝐝 𝐦𝐲 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔑*
 """,disable_web_page_preview=True,reply_markup=home_keyboard_pm)
 
 
