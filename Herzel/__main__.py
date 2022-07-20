@@ -62,7 +62,14 @@ async def start_bot():
             )
 
         else:
-            await app.send_message(-1001749160500, "Bot started!")
+            await app.send_message(-1001749160500, """
+ _____________________________________________   
+|                                             |  
+|          Deployed Successfully              |  
+|       (C) 2021-2022 by @ImPrabashwara       | 
+|        Greetings from Prabashwara  :)       |
+|_____________________________________________|""")
+	
     except Exception:
         pass
     print(f"{all_module}")
@@ -106,7 +113,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="🌐 𝐖𝐞𝐛𝐬𝐢𝐭𝐞",
-                url=f"",
+                url=f"https://prabashwarar.github.io",
             ),
             InlineKeyboardButton(
                 text="⚜️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥",
