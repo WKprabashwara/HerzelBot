@@ -5,12 +5,12 @@ from Herzel.utils.lang import *
 
 
 fbuttons = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(text="👥Support Group", url="https://t.me/szherzelsupport"),
-          InlineKeyboardButton(text="👤News Channel", url="https://t.me/Theherzelbot")], 
-        [ InlineKeyboardButton(text="⚒ Source Code", url="https://github.com/szsupunma/sz-herzelbot"),
-          InlineKeyboardButton(text="📓 Documentation", url="https://szsupunma.gitbook.io/herzel-bot")], 
-        [InlineKeyboardButton(text="🖥 How To Deploy Me", url="https://szsupunma.gitbook.io/herzel-bot")
-        ],[InlineKeyboardButton("« Back", callback_data='startcq')]])
+        [[InlineKeyboardButton(text="📻 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐠𝐫𝐨𝐮𝐩", url="https://t.me/Herzelsup_GroUp"),
+          InlineKeyboardButton(text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/HerzelUpdates")], 
+        [ InlineKeyboardButton(text="📜 𝐒𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐝𝐞", url="https://github.com/WKprabashwara/HerzelBot"),
+          InlineKeyboardButton(text="📓 𝐃𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧", url="")], 
+        [InlineKeyboardButton(text="✅ 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐞𝐩𝐥𝐨𝐲 𝐌𝐞 . . .", url="")
+        ],[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data='startcq')]])
 
 keyboard =InlineKeyboardMarkup(
     [[InlineKeyboardButton(text="🇱🇷 English", callback_data="languages_en")],
