@@ -118,7 +118,7 @@ async def rm_alldisbl(client, message: Message, _):
         "Are you sure you want to enable all?",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✅ Confirm",callback_data="enableallcmds",),InlineKeyboardButton("Cancel", callback_data="close_data")]]))
     
-__MODULE__ = "Disabling"
+__MODULE__ = "𝐃𝐢𝐬𝐚𝐛𝐥𝐢𝐧𝐠"
 __HELP__ = """
 This allows you to disable some commonly used commands,
 so none can use them. It'll also allow you to autodelete them, 
