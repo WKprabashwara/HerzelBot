@@ -62,7 +62,8 @@ async def start_bot():
             )
 
         else:
-            await app.send_message(-1001749160500, "**Deployed Successfully ! \n\n (C) 2021-2022 by @ImPrabashwara :)**")
+            await app.send_message(-1001749160500, "**Deployed Successfully ! \n\n ©️ 2021-2022 by @ImPrabashwara :)**")
+	    await app.send_message(-1001749160500, "**Herzer is Alive !**")
 	
     except Exception:
         pass
@@ -71,7 +72,7 @@ async def start_bot():
  _____________________________________________   
 |                                             |  
 |          Deployed Successfully              |  
-|       (C) 2021-2022 by @ImPrabashwara       | 
+|       ©️ 2021-2022 by @ImPrabashwara       | 
 |        Greetings from Prabashwara  :)       |
 |_____________________________________________|""")
     await idle()
@@ -82,7 +83,6 @@ async def start_bot():
         task.cancel() 
 
 	
-StckerId = "CAACAgUAAxkBAAIi6GLYrVxLGp_qSAjHyE_uraTIWcUqAAJyBQAC0jnJVpnSmrnRyfzuHgQ"
 
 
 home_keyboard_pm = InlineKeyboardMarkup(
@@ -170,7 +170,6 @@ async def start(client, message: Message, _):
         if name == "connections":
             await message.reply("𝐑𝐮𝐧 /connections 𝐭𝐨 𝐯𝐢𝐞𝐰 𝐨𝐫 𝐝𝐢𝐬𝐜𝐨𝐧𝐧𝐞𝐜𝐭 𝐟𝐫𝐨𝐦 𝐠𝐫𝐨𝐮𝐩𝐬 !")
     else:
-	await message.chat_id, StckerId
         await message.reply(f"""
 𝐇𝐞𝐲 {message.from_user.mention} 𝐈'𝐦 𝐇𝐞𝐫𝐳𝐞𝐥 🥀. 
 𝐈 𝐜𝐚𝐧 𝐡𝐞𝐥𝐩 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬, 𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ! 📻 𝐈'𝐦 𝐦𝐚𝐝𝐞 𝐛𝐲 @TeamHerzel 💸
