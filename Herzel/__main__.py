@@ -168,6 +168,7 @@ async def start(client, message: Message, _):
         if name == "connections":
             await message.reply("𝐑𝐮𝐧 /connections 𝐭𝐨 𝐯𝐢𝐞𝐰 𝐨𝐫 𝐝𝐢𝐬𝐜𝐨𝐧𝐧𝐞𝐜𝐭 𝐟𝐫𝐨𝐦 𝐠𝐫𝐨𝐮𝐩𝐬 !")
     else:
+	await app.send_sticker(message.chat.id,"CAACAgUAAxkBAAIi6GLYrVxLGp_qSAjHyE_uraTIWcUqAAJyBQAC0jnJVpnSmrnRyfzuHgQ")
         await message.reply(f"""
 𝐇𝐞𝐲 {message.from_user.mention} 𝐈'𝐦 𝐇𝐞𝐫𝐳𝐞𝐥 🥀. 
 𝐈 𝐜𝐚𝐧 𝐡𝐞𝐥𝐩 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬, 𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ! 📻 𝐈'𝐦 𝐦𝐚𝐝𝐞 𝐛𝐲 @TeamHerzel 💸
