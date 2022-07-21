@@ -67,7 +67,7 @@ async def wishper_ai(_, sz: InlineQuery):
 
 
 
-__MODULE__ = "whisper"
+__MODULE__ = "𝐖𝐡𝐢𝐬𝐩𝐞𝐫"
 __HELP__ = """
 the other way to use me is to write the inline query by your self
 the format should be in this arrangement
