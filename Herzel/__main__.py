@@ -62,13 +62,7 @@ async def start_bot():
             )
 
         else:
-            await app.send_message(-1001749160500, """
- _____________________________________________   
-|                                             |  
-|          Deployed Successfully              |  
-|       (C) 2021-2022 by @ImPrabashwara       | 
-|        Greetings from Prabashwara  :)       |
-|_____________________________________________|""")
+            await app.send_message(-1001749160500, "*Deployed Successfully ! \n\n (C) 2021-2022 by @ImPrabashwara :)*")
 	
     except Exception:
         pass
@@ -219,8 +213,8 @@ async def help_command(client, message: Message, _):
                 + HELPABLE[name].__HELP__)
                 )
                 if hasattr(HELPABLE[name], "__helpbtns__"):
-                       button = (HELPABLE[name].__helpbtns__) + [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
-                if not hasattr(HELPABLE[name], "__helpbtns__"): button = [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
+                       button = (HELPABLE[name].__helpbtns__) + [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
+                if not hasattr(HELPABLE[name], "__helpbtns__"): button = [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
                 await message.reply(text,
                            reply_markup=InlineKeyboardMarkup(button),
                            disable_web_page_preview=True)
@@ -268,14 +262,14 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-"""**Welcome to help menu**
+"""**𝐌𝐚𝐢𝐧  𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 : [🥀](https://telegra.ph/file/f55e6422e731172dca376.png)**
 
-I'm a group management bot with some useful features.
-You can choose an option below, by clicking a button.
-If you have any bugs or questions on how to use me, 
-have a look at my [Docs](https://szsupunma.gitbook.io/herzel-bot/), or head to @szteambots.
+• 𝐈'𝐦 𝐚 𝐠𝐫𝐨𝐮𝐩 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐬𝐨𝐦𝐞 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬.
+• 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚𝐧 𝐨𝐩𝐭𝐢𝐨𝐧 𝐛𝐞𝐥𝐨𝐰, 𝐛𝐲 𝐜𝐥𝐢𝐜𝐤𝐢𝐧𝐠 𝐚 𝐛𝐮𝐭𝐭𝐨𝐧.
+• 𝐈𝐟 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐚𝐧𝐲 𝐛𝐮𝐠𝐬 𝐨𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐨𝐧 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞, 
+• 𝐡𝐚𝐯𝐞 𝐚 𝐥𝐨𝐨𝐤 𝐚𝐭 𝐦𝐲 [𝐃𝐨𝐜𝐬](https://szsupunma.gitbook.io/herzel-bot/), 𝐨𝐫 𝐡𝐞𝐚𝐝 𝐭𝐨 @ImPrabashwara.
 
-**All commands can be used with the following: / **""",keyboard,)
+**𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐜𝐚𝐧 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠: /**""",keyboard,)
 
 @app.on_message(filters.command("ads"))
 async def ads_message(_, message):
@@ -311,20 +305,20 @@ async def help_button(client, query, _):
         module = (mod_match.group(1)).replace(" ", "_")
         text = (
             "{} **{}**:\n".format(
-                "Here is the help for", HELPABLE[module].__MODULE__
+                "𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐡𝐞𝐥𝐩 𝐟𝐨𝐫", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
-            + "\n👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma"
+            + "\n👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @ImPrabashwara"
         )
         if hasattr(HELPABLE[module], "__helpbtns__"):
-                       button = (HELPABLE[module].__helpbtns__) + [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
-        if not hasattr(HELPABLE[module], "__helpbtns__"): button = [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
+                       button = (HELPABLE[module].__helpbtns__) + [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
+        if not hasattr(HELPABLE[module], "__helpbtns__"): button = [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
         await query.message.edit(
             text=text,
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
-        await query.answer(f"Here is the help for {module}")
+        await query.answer(f"𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐡𝐞𝐥𝐩 𝐟𝐨𝐫 {module}")
     elif home_match:
         await app.send_message(
             query.from_user.id,
