@@ -63,7 +63,6 @@ async def start_bot():
 
         else:
             await app.send_message(-1001749160500, "**Deployed Successfully ! \n\n ©️ 2021-2022 by @ImPrabashwara :)**")
-	    await app.send_message(-1001749160500, "**Herzer is Alive !**")
 	
     except Exception:
         pass
