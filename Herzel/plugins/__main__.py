@@ -1,4 +1,4 @@
-""" This is my herzel bot  """
+""" This is my Herzel bot  """
 
 
 
