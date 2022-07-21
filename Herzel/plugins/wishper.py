@@ -10,7 +10,7 @@ from pyrogram.types import (
 
 lengths = 200
 
-IMG = "https://telegra.ph/file/8bb5ad38249514dbf72e6.jpg"
+IMG = "https://telegra.ph/file/f55e6422e731172dca376.png"
 
 @app.on_inline_query()
 async def wishper_ai(_, sz: InlineQuery):
@@ -20,10 +20,10 @@ async def wishper_ai(_, sz: InlineQuery):
             or (query.startswith('@') and len(split) == 1):
         title = f"🔐 Write a whisper message"
         content = ("**Send whisper messages through inline mode**\n\n"
-                   "Usage: `@herzelbot [@username] text`")
-        description = "Usage: @herzelbot [@username] text"
+                   "Usage: `@Herzelbot [@username] text`")
+        description = "Usage: @Herzelbot [@username] text"
         button = InlineKeyboardButton(
-            "More-Help",
+            "𝐌𝐨𝐫𝐞-𝐇𝐞𝐥𝐩",
             url="https://t.me/herzelbot?start=learn"
         )
 
@@ -34,7 +34,7 @@ async def wishper_ai(_, sz: InlineQuery):
         )
         description = f"{emoji.SHUSHING_FACE} {query}"
         button = InlineKeyboardButton(
-            f"🎯 show message",
+            f"🎯 𝐒𝐡𝐨𝐰 𝐦𝐞𝐬𝐬𝐚𝐠𝐞",
             callback_data="show_whisper"
         )
 
