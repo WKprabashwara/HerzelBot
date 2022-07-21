@@ -1,5 +1,5 @@
 <p align="center">
-      <img style="width:100px; height: 100px;"  src="https://telegra.ph/file/c823fea618f6c024e75a9.png"></p>
+      <img style="width:1000px; height: 800px;"  src="https://telegra.ph/file/4488b2fe80abb963d88bd.jpg"></p>
 <h1 align="center"><b>Herzel bot ✨</b></h1>
 <h2 align="center"><b>The Telegram Bot to manage and protect groups</b></h2>
 <h4 align="center">Herzel bot  simplifies the management, administration and security of your group</h4>
@@ -59,9 +59,9 @@ Getting started protecting and managing your group better with Herzel Bot is ver
 ## Customize your Herzel Bot - create a clone (Deploy Heroku)
 If you want to make your bot even more unique, you can create a customized herzel bot clone with a name and profile photo of your choice.
 
-<img style="width:300px; height: 200px;" href="https://youtu.be/ZUvFSU8W7VA" src="https://telegra.ph/file/cf3a10a7f61f62983d2ca.png" alt="youtube"> 
+<img style="width:300px; height: 200px;" href="https://youtu.be/ZUvFSU8W7VA" src="https://telegra.ph/file/4488b2fe80abb963d88bd.jpg" alt="youtube"> 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/szsupunma/sz-herzelbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wkprabashwara/herzelbot)
 
 ## Contact & Support Chats
 
