@@ -101,7 +101,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
         ],
         [
 	    InlineKeyboardButton(
-		text="👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬",
+		text="👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫",
 		url="https://t.me/Imprabashwara"
 	    ),
             InlineKeyboardButton(
