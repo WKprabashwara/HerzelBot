@@ -62,7 +62,7 @@ async def start_bot():
             )
 
         else:
-            await app.send_message(-1001749160500, "*Deployed Successfully ! \n\n (C) 2021-2022 by @ImPrabashwara :)*")
+            await app.send_message(-1001749160500, "**Deployed Successfully ! \n\n (C) 2021-2022 by @ImPrabashwara :)**")
 	
     except Exception:
         pass
@@ -100,6 +100,10 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
         ],
         [
+	    InlineKeyboardButton(
+		text="👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬",
+		url="https://t.me/Imprabashwara"
+	    ),
             InlineKeyboardButton(
                 text="⚙️ 𝐇𝐞𝐥𝐩", callback_data="bot_commands"
             ),
