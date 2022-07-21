@@ -38,7 +38,7 @@ def capture_err(func):
                 tb=exc_tb,
             )
             error_feedback = split_limits(
-                "❗️ **ERROR**\n\n```{}```\n\n```{}```\n".format(
+                "❗️ **𝐄𝐑𝐑𝐎𝐑**\n\n```{}```\n\n```{}```\n".format(
                     message.text or message.caption,
                     "".join(errors),
                 ),
