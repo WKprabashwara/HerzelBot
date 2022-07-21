@@ -15,7 +15,7 @@ from pyrogram.errors import InputUserDeactivated,FloodWait, UserIsBlocked, PeerI
 
 @app.on_message(filters.command("stats"))
 async def gstats(_, message):
-    response = await message.reply_text(text="Getting Stats!"
+    response = await message.reply_text(text="**Getting Stats...!**"
     )
     notesdb = Notes()
     rulesdb = Rules
@@ -44,7 +44,7 @@ async def gstats(_, message):
     datasiz = str(datasiz)
     storag = supun["storageSize"] / 1024
     smex = f"""
-** General Stats of Herzel Bot**
+** General Stats of Herzel Bot 🛡**
 
 • **Ram:** `{ram}`
 • **Pyrogram Version:** `{pyrover}`
@@ -58,6 +58,7 @@ async def gstats(_, message):
 • **Total Users I see:**`{len(serve_users)}`
 • **Total languages** : `10`
 
+𝐟𝐫𝐨𝐦 @ImPrabashwara
 """
     await response.edit_text(smex)
     return
