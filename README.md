@@ -5,14 +5,15 @@
 <h4 align="center">Herzel bot  simplifies the management, administration and security of your group</h4>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/szsupunma/sz-herzelbot?style=for-the-badge&logo=appveyor" alt="LICENSE">
-    <img src="https://img.shields.io/github/contributors/szsupunma/sz-herzelbot?style=for-the-badge&logo=appveyor" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/szsupunma/sz-herzelbot?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/github/issues/szsupunma/sz-herzelbot?style=for-the-badge&logo=appveyor" alt="Issues">
-    <img src="https://img.shields.io/github/forks/szsupunma/sz-herzelbot?style=for-the-badge&logo=appveyor" alt="Forks">
-    <img src="https://img.shields.io/github/stars/szsupunma/sz-herzelbot?style=for-the-badge&logo=appveyor" alt="Stars">
-    <img href="https://crowdin.com/project/herzelbot" src="https://badges.crowdin.net/herzelbot/localized.svg" alt="crowndin"> 
+    <img src="https://img.shields.io/github/license/wkprabashwara/HerzelBot?style=for-the-badge&logo=appveyor" alt="LICENSE">
+    <img src="https://img.shields.io/github/contributors/wkprabashwara/HerzelBot?style=for-the-badge&logo=appveyor" alt="Contributors">
+    <img src="https://img.shields.io/github/repo-size/wkprabashwara/HerzelBot?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
+    <img src="https://img.shields.io/github/issues/wkprabashwara/HerzelBot?style=for-the-badge&logo=appveyor" alt="Issues">
+    <img src="https://img.shields.io/github/forks/wkprabashwara/HerzelBot?style=for-the-badge&logo=appveyor" alt="Forks">
+    <img src="https://img.shields.io/github/stars/wkprabashwara/HerzelBot?style=for-the-badge&logo=appveyor" alt="Stars">
 </p>
+
+[![Sparkline](https://stars.medv.io/Teamultroid/Ultroid.svg)](https://stars.medv.io/TeamUltroid/Ultroid)
 
 ## What is Herzel for ?
 
@@ -65,20 +66,20 @@ If you want to make your bot even more unique, you can create a customized herze
 
 ## Contact & Support Chats
 
- - [support group ](https://t.me/slbotzone)
- - [News Channel ](https://t.me/szherzelupdates) 
- - [Documentation ](https://szsupunma.gitbook.io/herzel-bot/)
- - [Logs Channel ](https://t.me/szherzellog)
- - [Network ](https://t.me/TeamHerzelBot)
+ - [support group ](https://t.me/Herzelsup_GroUp)
+ - [News Channel ](https://t.me/HerzelUpdates) 
+ - [Documentation ](https://wkprabashwara.gitbook.io/herzelbot/)
+ - [Logs Channel ](https://t.me/teamherzel)
+ - [Network ](https://t.me/TeamHerzelSl)
 
 [![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
 Herzel is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
 
 ## Special credits
 Special thanks to these amazing projects/people which/who help power Herzel bot
-### [click Here](https://szsupunma.gitbook.io/herzel-bot/getting-started/credits)
+### [click Here](https://wkprabashawara.gitbook.io/herzelbot/getting-started/credits)
 
 ## Contributions
 #### Contributions are welcome.
 
-![Contributors](https://contrib.rocks/image?repo=szsupunma/sz-herzelbot)
+![Contributors](https://contrib.rocks/image?repo=wkprabashwara/HerzelBot)
