@@ -72,7 +72,7 @@ async def start_bot():
 |                                             |  
 |          Deployed Successfully              |  
 |       ©️ 2021-2022 by @ImPrabashwara       | 
-|        Greetings from Prabashwara  :)       |
+|        Greetings from Prabashwara 🇱🇰 :)       |
 |_____________________________________________|""")
     await idle()
 
@@ -88,34 +88,34 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ➕",
+                text="➕ Add Me to Your Group ➕",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
            InlineKeyboardButton(
-                text="ℹ️ 𝐀𝐛𝐨𝐮𝐭", callback_data="_about"
+                text="ℹ️ About", callback_data="_about"
             ),
             InlineKeyboardButton(
-                text="🌏 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞𝐬", callback_data="_langs"
+                text="🌏 Languages", callback_data="_langs"
             ),
         ],
         [
 	    InlineKeyboardButton(
-		text="👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫",
+		text="👨‍💻 Developer",
 		url="https://t.me/Imprabashwara"
 	    ),
             InlineKeyboardButton(
-                text="⚙️ 𝐇𝐞𝐥𝐩", callback_data="bot_commands"
+                text="⚙️ Help", callback_data="bot_commands"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🌐 𝐖𝐞𝐛𝐬𝐢𝐭𝐞",
+                text="🌐 Website",
                 url=f"https://prabashwarar.github.io",
             ),
             InlineKeyboardButton(
-                text="⚜️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥",
+                text="⚜️ Support Channel",
                 url=f"https://t.me/HerzelUpdates",
             )
         ],
@@ -126,7 +126,7 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="📚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 & 𝐇𝐞𝐥𝐩",
+                text="📚 Commands & Help",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             )
         ]
@@ -168,13 +168,13 @@ async def start(client, message: Message, _):
                 disable_web_page_preview=True,
             )
         if name == "connections":
-            await message.reply("𝐑𝐮𝐧 /connections 𝐭𝐨 𝐯𝐢𝐞𝐰 𝐨𝐫 𝐝𝐢𝐬𝐜𝐨𝐧𝐧𝐞𝐜𝐭 𝐟𝐫𝐨𝐦 𝐠𝐫𝐨𝐮𝐩𝐬 !")
+            await message.reply("Run ```/connections``` to view or disconnet from groups !")
     else:
         await message.reply(f"""
-𝐇𝐞𝐲 {message.from_user.mention} 𝐈'𝐦 𝐇𝐞𝐫𝐳𝐞𝐥 🥀. 
-𝐈 𝐜𝐚𝐧 𝐡𝐞𝐥𝐩 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬, 𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ! 📻 𝐈'𝐦 𝐦𝐚𝐝𝐞 𝐛𝐲 @TeamHerzel 💸
+Hey {message.from_user.mention} I'm **Herzel** 🥀. 
+I can help manage your group with useful features, Fell to add me to your group ! 📻 I'm made by @teamHerzelSl 💸
 
-𝐇𝐢𝐭 /help 𝐭𝐨 𝐟𝐢𝐧𝐝 𝐦𝐲 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔑
+Hit ```/help``` to find my list of available commands 🔑
 """,reply_markup=home_keyboard_pm)
         return await add_served_user(chat_id) 
 
@@ -219,8 +219,8 @@ async def help_command(client, message: Message, _):
                 + HELPABLE[name].__HELP__)
                 )
                 if hasattr(HELPABLE[name], "__helpbtns__"):
-                       button = (HELPABLE[name].__helpbtns__) + [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
-                if not hasattr(HELPABLE[name], "__helpbtns__"): button = [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
+                       button = (HELPABLE[name].__helpbtns__) + [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
+                if not hasattr(HELPABLE[name], "__helpbtns__"): button = [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
                 await message.reply(text,
                            reply_markup=InlineKeyboardMarkup(button),
                            disable_web_page_preview=True)
@@ -257,10 +257,10 @@ async def startcq(client,CallbackQuery, _):
         served_users.append(int(user["bot_users"]))
     await CallbackQuery.message.edit(
             text=f"""
-**𝐇𝐞𝐲** {CallbackQuery.from_user.mention} **𝐈'𝐦 𝐇𝐞𝐫𝐳𝐞𝐥 🥀. 
-𝐈 𝐜𝐚𝐧 𝐡𝐞𝐥𝐩 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬, 𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 ! 📻 𝐈'𝐦 𝐦𝐚𝐝𝐞 𝐛𝐲 @TeamHerzel 💸**
+Hey {CallbackQuery.from_user.mention} I'm **Herzel** 🥀. 
+I can help manage your group with useful features, Fell to add me to your group ! 📻 I'm made by @teamHerzelSl 💸
 
-**𝐇𝐢𝐭** /help **𝐭𝐨 𝐟𝐢𝐧𝐝 𝐦𝐲 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔑**
+Hit ```/help``` to find my list of available commands 🔑
 """,disable_web_page_preview=True,reply_markup=home_keyboard_pm)
 
 
@@ -268,14 +268,14 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-"""**𝐌𝐚𝐢𝐧  𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 : [🥀](https://telegra.ph/file/f55e6422e731172dca376.png)**
+"""**Main Commands : __Herzel__ [🥀](https://telegra.ph/file/f55e6422e731172dca376.png)**
 
-• 𝐈'𝐦 𝐚 𝐠𝐫𝐨𝐮𝐩 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐬𝐨𝐦𝐞 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬.
-• 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚𝐧 𝐨𝐩𝐭𝐢𝐨𝐧 𝐛𝐞𝐥𝐨𝐰, 𝐛𝐲 𝐜𝐥𝐢𝐜𝐤𝐢𝐧𝐠 𝐚 𝐛𝐮𝐭𝐭𝐨𝐧.
-• 𝐈𝐟 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐚𝐧𝐲 𝐛𝐮𝐠𝐬 𝐨𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐨𝐧 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞, 
-• 𝐡𝐚𝐯𝐞 𝐚 𝐥𝐨𝐨𝐤 𝐚𝐭 𝐦𝐲 [𝐃𝐨𝐜𝐬](https://szsupunma.gitbook.io/herzel-bot/), 𝐨𝐫 𝐡𝐞𝐚𝐝 𝐭𝐨 @ImPrabashwara.
+• I'm a group management bot with some useful features.
+• Click on the buttons below to open help menu about that module
+• If you have found bugs or have questions on how to use me
+• Have a look at my [Docs](https://wkprabashwra.gitbook.io/herzelbot/), or head to @TeamHerzelSl.
 
-**𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐜𝐚𝐧 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠: /**""",keyboard,)
+**All commands can be used with the following : /**""",keyboard,)
 
 @app.on_message(filters.command("ads"))
 async def ads_message(_, message):
@@ -311,10 +311,10 @@ async def help_button(client, query, _):
         module = (mod_match.group(1)).replace(" ", "_")
         text = (
             "{} **{}**:\n".format(
-                "𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐡𝐞𝐥𝐩 𝐟𝐨𝐫", HELPABLE[module].__MODULE__
+                "Here is the help for", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
-            + "\n👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @ImPrabashwara"
+            + "\n👨‍💻 Developer : @ImPrabashwara"
         )
         if hasattr(HELPABLE[module], "__helpbtns__"):
                        button = (HELPABLE[module].__helpbtns__) + [[InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data="bot_commands")]]
@@ -324,7 +324,7 @@ async def help_button(client, query, _):
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
-        await query.answer(f"𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐡𝐞𝐥𝐩 𝐟𝐨𝐫 {module}")
+        await query.answer(f"Here is the help for {module}")
     elif home_match:
         await app.send_message(
             query.from_user.id,
