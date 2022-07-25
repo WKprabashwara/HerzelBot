@@ -7,42 +7,43 @@ from Herzel.utils.lang import *
 fbuttons = InlineKeyboardMarkup(
         [
         [
-          InlineKeyboardButton(text="📻 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐠𝐫𝐨𝐮𝐩", url="https://t.me/Herzelsup_GroUp"),
-          InlineKeyboardButton(text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/HerzelUpdates")
+          InlineKeyboardButton(text="📻 Suppor Group", url="https://t.me/Herzelsup_GroUp"),
+          InlineKeyboardButton(text="💬 Support Channel", url="https://t.me/HerzelUpdates")
         ],
         [ 
-          InlineKeyboardButton(text="📍𝐂𝐫𝐞𝐝𝐢𝐭", callback_data='credit'),
-          InlineKeyboardButton(text="❔𝐇𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 ", callback_data='htouse')
+          InlineKeyboardButton(text="📍Credit", callback_data='credit'),
+          InlineKeyboardButton(text="❔How to use Me ", callback_data='htouse')
         ],
         [ 
-          InlineKeyboardButton(text="📜 𝐒𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐝𝐞", url="https://github.com/WKprabashwara/HerzelBot"),
-          InlineKeyboardButton(text="📓 𝐃𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧", url="https://prabashwarar.github.io")
+          InlineKeyboardButton(text="📜 Source Code", url="https://github.com/WKprabashwara/HerzelBot"),
+          InlineKeyboardButton(text="📓 Documentation", url="https://prabashwarar.github.io")
         ], 
         [
-          InlineKeyboardButton(text="✅ 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐞𝐩𝐥𝐨𝐲 𝐌𝐞 . . .", url="https://prabashwarar.github.io")
+          InlineKeyboardButton(text="✅ How to Deploy Me . . .", url="https://telegra.ph/How-to-Develop-herzel-Bot-07-25")
         ],
         [
-          InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data='startcq')
+          InlineKeyboardButton("« Back", callback_data='startcq')
         ]])
 
 ckeyboard = InlineKeyboardMarkup(
         [
         [
-          InlineKeyboardButton(text="📻 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐠𝐫𝐨𝐮𝐩", url="https://t.me/Herzelsup_GroUp"),
-          InlineKeyboardButton(text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/HerzelUpdates")
+          InlineKeyboardButton(text="📻 Suppor Group", url="https://t.me/Herzelsup_GroUp"),
+          InlineKeyboardButton(text="💬 Support Channel", url="https://t.me/HerzelUpdates")
         ],
         [ 
-          InlineKeyboardButton(text="📍𝐂𝐫𝐞𝐝𝐢𝐭", callback_data='startcq'),
-          InlineKeyboardButton(text="📍𝐂𝐫𝐞𝐝𝐢𝐭", callback_data='startcq')
+          InlineKeyboardButton(text="📍Credit", callback_data='credit'),
+          InlineKeyboardButton(text="❔How to use Me ", callback_data='htouse')
         ],
-        [ InlineKeyboardButton(text="📜 𝐒𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐝𝐞", url="https://github.com/WKprabashwara/HerzelBot"),
-          InlineKeyboardButton(text="📓 𝐃𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧", url="https://prabashwarar.github.io")
+        [ 
+          InlineKeyboardButton(text="📜 Source Code", url="https://github.com/WKprabashwara/HerzelBot"),
+          InlineKeyboardButton(text="📓 Documentation", url="https://prabashwarar.github.io")
         ], 
         [
-          InlineKeyboardButton(text="✅ 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐞𝐩𝐥𝐨𝐲 𝐌𝐞 . . .", url="https://prabashwarar.github.io")
+          InlineKeyboardButton(text="✅ How to Deploy Me . . .", url="https://telegra.ph/How-to-Develop-herzel-Bot-07-25")
         ],
         [
-          InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data='startcq')
+          InlineKeyboardButton("« Back", callback_data='startcq')
         ]])
 
 keyboard = InlineKeyboardMarkup(
@@ -57,13 +58,13 @@ keyboard = InlineKeyboardMarkup(
       InlineKeyboardButton(text="🇲🇼 Chichewa", callback_data="languages_ny")], 
      [InlineKeyboardButton(text="🇩🇪 German", callback_data="languages_ge"), 
       InlineKeyboardButton(text="🇷🇺 Russian", callback_data="languages_ru")], 
-     [InlineKeyboardButton("« 𝐁𝐚𝐜𝐤", callback_data='startcq')]])
+     [InlineKeyboardButton("« Back", callback_data='startcq')]])
 
 @app.on_callback_query(filters.regex("_langs"))
 @languageCB
 async def commands_callbacc(client, CallbackQuery, _):
     await CallbackQuery.message.edit(
-        text= "𝐂𝐡𝐨𝐨𝐬𝐞 𝐘𝐨𝐮𝐫 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞𝐬 :",
+        text= "Choose your language :",
         reply_markup=keyboard,
         disable_web_page_preview=True,
     )
