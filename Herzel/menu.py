@@ -29,7 +29,7 @@ ckeyboard = InlineKeyboardMarkup(
         [
         [
           InlineKeyboardButton(text="📻 Suppor Group", url="https://t.me/Herzelsup_GroUp"),
-          InlineKeyboardButton(text="💬 Support Channel", url="https://t.me/HerzelUpdates")
+          InlineKeyboardButton(text="💬 Support Channel", url="https://t.me/EpicBotSSl")
         ],
         [ 
           InlineKeyboardButton(text="📍Credit", callback_data='credit'),
