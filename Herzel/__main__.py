@@ -71,8 +71,8 @@ async def start_bot():
  _____________________________________________   
 |                                             |  
 |          Deployed Successfully              |  
-|       ©️ 2021-2022 by @ImPrabashwara       | 
-|        Greetings from Prabashwara 🇱🇰 :)       |
+|       ©️ 2021-2022 by @ImPrabashwara         | 
+|      Greetings from Prabashwara 🇱🇰 :)       |
 |_____________________________________________|""")
     await idle()
 
@@ -116,7 +116,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="⚜️ Support Channel",
-                url=f"https://t.me/HerzelUpdates",
+                url=f"https://t.me/EpicBotSSl",
             )
         ],
     ]
@@ -172,7 +172,7 @@ async def start(client, message: Message, _):
     else:
         await message.reply(f"""
 Hey {message.from_user.mention} I'm **Herzel** 🥀. 
-I can help manage your group with useful features, Fell to add me to your group ! 📻 I'm made by @teamHerzelSl 💸
+I can help manage your group with useful features, Fell to add me to your group ! 📻 I'm made by @EpicBotSSl 💸
 
 Hit ```/help``` to find my list of available commands 🔑
 """,reply_markup=home_keyboard_pm)
@@ -258,7 +258,7 @@ async def startcq(client,CallbackQuery, _):
     await CallbackQuery.message.edit(
             text=f"""
 Hey {CallbackQuery.from_user.mention} I'm **Herzel** 🥀. 
-I can help manage your group with useful features, Fell to add me to your group ! 📻 I'm made by @teamHerzelSl 💸
+I can help manage your group with useful features, Fell to add me to your group ! 📻 I'm made by @EpicBotSSl 💸
 
 Hit ```/help``` to find my list of available commands 🔑
 """,disable_web_page_preview=True,reply_markup=home_keyboard_pm)
@@ -273,7 +273,7 @@ async def help_parser(name, keyboard=None):
 • I'm a group management bot with some useful features.
 • Click on the buttons below to open help menu about that module
 • If you have found bugs or have questions on how to use me
-• Have a look at my [Docs](https://wkprabashwra.gitbook.io/herzelbot/), or head to @TeamHerzelSl.
+• Have a look at my [Docs](https://wkprabashwra.gitbook.io/herzelbot/), or head to @EpicBotSSl.
 
 **All commands can be used with the following : /**""",keyboard,)
 
